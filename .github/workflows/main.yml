@@ -1,4 +1,4 @@
-name: Send Email
+name: Send Test Email
 on:
   push:
     branches: [ main ]
@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send mail
-        uses: dawiddr/action-send-mail@v3.1.0
+        uses: dawiddr/send-mail@v3
         with:
           server_address: smtp.gmail.com
           server_port: 465
