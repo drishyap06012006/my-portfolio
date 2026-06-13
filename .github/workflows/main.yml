@@ -6,8 +6,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Send mail
-        uses: dawiddr/send-mail@v3
+        uses: dawiddr/action-send-mail@v3.1.0
         with:
           server_address: smtp.gmail.com
           server_port: 465
