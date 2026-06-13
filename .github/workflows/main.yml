@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send mail
-        uses: dawiddr/action-send-mail@master
+        uses: dawidd9/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
           server_port: 465
