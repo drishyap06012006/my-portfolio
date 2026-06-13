@@ -6,8 +6,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
       - name: Send mail
         uses: dawiddr/action-send-mail@v3.1.0
         with:
@@ -15,7 +13,7 @@ jobs:
           server_port: 465
           username: ${{ secrets.EMAIL_USER }}
           password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: "Test Email from GitHub"
-          body: "The workflow is working perfectly!"
+          subject: "Portfolio Contact"
+          body: "You have a new message from your portfolio!"
           to: ${{ secrets.EMAIL_TO }}
           from: GitHub Actions
