@@ -122,3 +122,14 @@ ul { list-style: none; }
 #to-top.show {
     opacity: 1;
 }
+/* Dark Mode Styles */
+body.dark {
+    background-color: #121212; /* Dark background */
+    color: #ffffff;            /* Light text */
+}
+
+
+body.dark .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
